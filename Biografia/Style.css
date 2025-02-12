@@ -1,0 +1,21 @@
+#Texto{
+    display: inline-block;
+    vertical-align: top;
+}
+.Container{
+    display: flex;
+}
+
+td, th{
+    border: 1px;
+    text-align: left;
+    padding: 8px;
+    border-style:double;
+}
+table{
+    border-style:ridge;
+    
+}
+p{
+    text-align:justify;
+}
