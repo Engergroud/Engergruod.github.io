@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Tarea de Laboratorio de programacion 3</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Mostrar 102 Etiquetas HTML, conforme a la siguiente estructura:</h1>
+    <h2><ol><li>Nombre de la Etiqueta</li>
+
+        <li>Descripción (que significa, que hace)</li> 
+        
+        <li>Ejemplo de cómo usar (escriba un ejemplo de como se usa la etiqueta)</li>
+        
+        <li>Cualquier elemento adicional (cualquier componente que quieran agregar) con respecto a la etiqueta es válido</li></ol></h2>
+
+        <ol>
+    <table>
+
+        <tr>
+          <th>Nobre de la Etiqueta</th>
+          <th>Descripción</th>
+          <th>Ejemplo de cómo usar</th>
+          <th>Cualquier elemento adicional</th>
+        </tr>
+        
+        <tr>
+            <td class="Inicial">&lt;!DOCTYPE&gt;</td>
+            <td>Declara que el documento es HTML</td>
+            <td>&lt;!DOCTYPE HTML&gt;</td>
+            <td>Debería ser la primera etiqueta en su página HTML</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;html&gt; &lt;/html&gt;</td>
+            <td>Representa la raíz de un documento HTML; todos los demás elementos están contenidos dentro de esta etiqueta.</td>
+            <td>&lt;html&gt;&lt;head&gt;&lt;title&gt;Titulo&lt;/title&gt;&lt;/head&gt;&lt;/html&gt;</td>
+            <td>Es el contenedor de todos los demás elementos HTML.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;head&gt; &lt;/head&gt;</td>
+            <td>contiene metainformación sobre el documento HTML, como juego de caracteres, título y enlaces a hojas de estilo.</td>
+            <td>&lt;head&gt;&lt;title&gt;Titulo&lt;/title&gt;&lt;/head&gt;</td>
+            <td>Se coloca entre la etiqueta &lt;html&gt; y la etiqueta &lt;body&gt;.</td>
+        </tr>
+
+        <td class="Inicial">&lt;title&gt;</td>
+          <td>
+            Especifica un título para el documento HTML (que se muestra en la barra o pestaña de título del navegador)</td>
+          <td>&lt;title&gt;My Website&lt;/title>&gt;</td>
+          <td>Es obligatorio en todos los documentos HTML y define el título en la barra de herramientas del navegador</td>
+        </tr>
+
+        <tr>
+          <td class="Inicial">&lt;body&gt; &lt;/body&gt;</td>
+          <td>Define el cuerpo del documento y contiene todo el contenido (texto, imágenes, videos, etc.) del documento HTML </td>
+          <td>&lt;body&gt;&lt;h1&gt;Iniciar el curso&lt;/h1&gt;&lt;/body&gt;</td>
+          <td>Debería ser la primera etiqueta en tu página HTML </td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;header&gt; &lt;/header&gt;</td>
+            <td>Define un encabezado para un documento o sección, que normalmente contiene el logotipo, el menú de navegación, etc.</td>
+            <td>&lt;header&gt;&lt;h1&gt;Encabezado&lt;/h1&gt;&lt;/header&gt;</td>
+            <td>Debería ser la primera etiqueta en tu página HTML </td>
+        </tr>
+          
+        <tr>
+            <td class="Inicial">&lt;footer&gt; &lt;/footer&gt;</td>
+            <td>Define un pie de página para un documento o sección, que normalmente contiene información de derechos de autor, información de contacto, etc.</td>
+            <td>&lt;footer&gt;&lt;p&gt;Pie de pagina&lt;/p&gt;&lt;/footer&gt;</td>
+            <td>Puede tener varios pies de página en un documento</td>
+         </tr>
+
+        <tr>
+            <td class="Inicial">&lt;p&gt; &lt;/p&gt;</td>
+            <td>Define el parrafo del texto</td>
+            <td>&lt;p&gt;Aqui se escribe el contenido del parrafo&lt;/p&gt;</td>
+            <td>Los navegadores agregan automáticamente algo de espacio (margen) antes y después de cada \</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;br&gt;</td>
+            <td>Inserta un salto de línea único</td>
+            <td>&lt;p&gt;Aqui se escribe &lt;br&gt;el contenido del parrafo&lt;/p&gt;</td>
+            <td>Es una etiqueta vacía, lo que significa que no tiene etiqueta de cierre.</td>
+        </tr>
+        
+        <tr>
+            <td class="Inicial">&lt;hr&gt;</td>
+            <td>Representa una ruptura temática entre elementos a nivel de párrafo (por ejemplo, un cambio de escena en una historia o un cambio de tema en una sección).</td>
+            <td>&lt;p&gt;Primera seccion &lt;/p&gt;  &lt;hr&gt;&lt;p&gt;segunda seccion&lt;/p&gt;</td>
+            <td>Se utiliza comúnmente como separador.</td>
+        </tr>
+        
+        <tr>
+            <td class="Inicial">&lt;h1&gt; &lt;h6&gt;</td>
+            <td> Definir encabezados HTML. &lt;h1&gt; define el encabezado más importante. &lt;h6&gt; define el encabezado menos importante.</td>
+            <td>&lt;h1&gt;Aqui va el titulo &lt;/h1&gt;  </td>
+            <td>Utilice únicamente un &lt;h1&gt; por página; esto debería representar el encabezado/título principal de toda la página.</td>
+                
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;pre&gt; &lt;/pre&gt;</td>
+            <td>Define texto preformateado, que se muestra en una fuente de ancho fijo y conserva espacios y saltos de línea</td>
+            <td>&lt;pre&gt;Texto con espacios y saltos de línea &lt;/pre&gt;  </td>
+            <td>Útil para mostrar fragmentos de código.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;blockquote&gt; &lt;/blockquote&gt;</td>
+            <td>Indica que el texto adjunto es una cita ampliada.</td>
+            <td>&lt;blockquote&gt;Esta es una cita de otra fuente. &lt;/blockquote&gt;  </td>
+            <td>Los navegadores suelen aplicar sangría a los elementos &lt;blockquote&gt;.</td>
+                
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;abbr&gt; &lt;/abbr&gt;</td>
+            <td>Define una abreviatura o un acrónimo.</td>
+            <td>&lt;abbr title="World Wide Web" &gt;WWW &lt;/abbr&gt;  </td>
+            <td>El uso del atributo de título puede mostrar la versión completa de la abreviatura al pasar el mouse sobre el elemento.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;address&gt; &lt;/address&gt;</td>
+            <td>Defina la información de contacto del autor/propietario de un documento o artículo</td>
+            <td>&lt;address&gt;La direccion que desea escribir&lt;/address&gt;  </td>
+            <td>El texto del elemento \ normalmente se muestra en cursiva</td>
+
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;b&gt; &lt;/b&gt;</td>
+            <td>Define el texto en negrita</td>
+            <td>&lt;p&gt;Texto con &lt;b&gt;espacios y saltos&lt;/b&gt; de línea &lt;/p&gt;  </td>
+            <td>Utilice la etiqueta &lt;strong&gt; para indicar que el texto es importante.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;bdi&gt; &lt;/bdi&gt;</td>
+            <td>El elemento aísla una parte del texto que podría tener 
+                formato en una dirección diferente a la de otro texto fuera de él</td>
+            <td>&lt;p dir="ltr"&gt;This Arabic word &lt;bdi&gt;ARABIC_PLACEHOLDER&lt;/bdi&gt; is automatically displayed
+                from right to left&lt;/p&gt;&lt;/td&gt;
+            <td>Es útil para incrustar texto con direccionalidad desconocida, 
+                como el de una base de datos, dentro de texto con una dirección fija.</td>
+        </tr>
+        
+        <tr>
+            <td class="Inicial">&lt;bdo&gt; &lt;/bdo&gt;</td>
+            <td>Anula la dirección del texto actual</td>
+            <td>&lt;bdo dir="rtl"&gt;Su texto se escribirá de derecha a izquierda. &lt;/bdo&gt;  </td>
+            <td>Útil para mostrar fragmentos de código.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;cite&gt; &lt;/cite&gt;</td>
+            <td>Define el título de una obra creativa (por ejemplo, un libro, una canción, una película, una pintura, una escultura, etc.).</td>
+            <td>&lt;cite&gt;El Grito &lt;/cite&gt; by Edvard Munch  </td>
+            <td>El texto del elemento \ normalmente se muestra en cursiva..</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;code&gt; &lt;/code&gt;</td>
+            <td>Define un fragmento de código informático.</td>
+            <td>&lt;code&gt;int x = 5 &lt;/code&gt;  </td>
+            <td>El texto del elemento \ normalmente se representa en una fuente de ancho fijo.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;del&gt; &lt;/del&gt;</td>
+            <td>Define el texto que se ha eliminado de un documento.</td>
+            <td>&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red. &lt;/p&gt;  </td>
+            <td>Los navegadores suelen marcar una línea en el texto eliminado.</td>
+        </tr>
+                
+        <tr>
+            <td class="Inicial">&lt;dfn&gt; &lt;/dfn&gt;</td>
+            <td>Especifica un término que se definirá dentro del contenido.</td>
+            <td>&lt;dfn&gt;HTML&lt;/dfn&gt;es el lenguaje de marcado estándar para crear páginas web  </td>
+            <td>Utilice el atributo de título para especificar la descripción completa del término</td>
+        </tr>
+                
+        <tr>
+            <td class="Inicial">&lt;em&gt; &lt;/em&gt;</td>
+            <td> Define texto enfatizado</td>
+            <td>&lt;em&gt;Este texto se destaca&lt;/em&gt;  </td>
+            <td>Un navegador mostrará el texto resaltado en cursiva</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;i&gt; &lt;/i&gt;</td>
+            <td> Muestra el texto en una voz o estado de ánimo alternativo.</td>
+            <td>&lt;i&gt;Este texto está en cursiva&lt;/i&gt;  </td>
+            <td>Los navegadores normalmente subrayarán el texto insertado.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;ins&gt; &lt;/ins&gt;</td>
+            <td> Define un texto que ha sido insertado en un documento.</td>
+            <td>&lt;p&gt;Mi color favorito es el &lt;ins&gt;rojo&lt;/ins&gt;&lt;/p&gt;  </td>
+            <td>Los navegadores normalmente subrayarán el texto insertado.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;kbd&gt; &lt;/kbd&gt;</td>
+            <td> Define la entrada del teclado</td>
+            <td>Presiona&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt;para guardar el documento  </td>
+            <td>El texto dentro del elemento \ generalmente se muestra en la fuente monospace predeterminada del navegador.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;mark&gt; &lt;/mark&gt;</td>
+            <td> Define texto marcado/resaltado</td>
+            <td>&lt;p&gt;Resaltar&lt;mark&gt;este&lt;/mark&gt;texto&lt;/p&gt;</td>
+            <td>El elemento  se usa para marcar texto que debe recibir atención especial</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;q&gt; &lt;/q&gt;</td>
+            <td> Define una breve cita</td>
+            <td>&lt;q&gt;Esta es una breve cita&lt;/q&gt;</td>
+            <td>Los navegadores generalmente insertan comillas alrededor del elemento .</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;s&gt; &lt;/s&gt;</td>
+            <td> Define texto que ya no es correcto</td>
+            <td>&lt;s&gt;Este es un texto incorrecto&lt;/s&gt;</td>
+            <td>Los navegadores suelen tachar el texto corregido</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;samp&gt; &lt;/samp&gt;</td>
+            <td> Define la salida de muestra de un programa informático</td>
+            <td>&lt;samp&gt;Error: Archivo no encontrado&lt;/samp&gt;</td>
+            <td>El texto dentro del elemento \ generalmente se muestra en la fuente monospaciada predeterminada del navegador.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;small&gt; &lt;/small&gt;</td>
+            <td>Define texto más pequeño</td>
+            <td>&lt;small&gt;Esto es un texto más pequeño&lt;/small&gt;</td>
+            <td>Se puede usar para comentarios al margen y texto pequeño, como derechos de autor y texto legal.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;strong&gt; &lt;/strong&gt;</td>
+            <td>Define texto importante</td>
+            <td>&lt;strong&gt;Este texto es importante&lt;/strong&gt;</td>
+            <td>Un navegador mostrará texto importante en negrita.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;sub&gt; &lt;/sub&gt;</td>
+            <td>Define el texto subíndice</td>
+            <td>H&lt;sub&gt;2&lt;/sub&gt;0</td>
+            <td>El texto subescrito aparece medio carácter por debajo de la línea normal.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;sup&gt; &lt;/sup&gt;</td>
+            <td>Define el texto superescrito</td>
+            <td>X&lt;sup&gt;2&lt;/sup&gt;</td>
+            <td>El texto superescrito aparece medio carácter por encima de la línea normal.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;time&gt; &lt;/time&gt;</td>
+            <td>Define un tiempo (o fecha y hora) específico.</td>
+            <td>&lt;time datetime="2024-05-03"&gt;May 3, 2024&lt;/time&gt;</td>
+            <td>El atributo datetime se utiliza para traducir el tiempo a un formato legible por máquina</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;u&gt; &lt;/u&gt;</td>
+            <td>Representa algún texto que debe ser estilísticamente diferente del texto normal.</td>
+            <td>&lt;u&gt;Texto subrayado&lt;/u&gt;</td>
+            <td>Por defecto, se muestra como texto subrayado.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;var&gt; &lt;/var&gt;</td>
+            <td>Define una variable</td>
+            <td>&lt;var&gt;X&lt;/var&gt;=5</td>
+            <td>El texto dentro del elemento <i/> generalmente se muestra en cursiva</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;wbr&gt;</td>
+            <td>Especifica dónde el navegador puede dividir una línea.</td>
+            <td>&lt;p&gt;Esta es una &lt;wbr&gt;palabra_larga_que_puede_romperse.&lt;/p&gt;</td>
+            <td>El texto dentro del elemento <i/> generalmente se muestra en cursiva</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;ol&gt; &lt;/ol&gt;</td>
+            <td>Define una lista ordenada</td>
+            <td>&lt;ol&gt;li&gt;Objeto 1&lt;/li&gt;li&gt;Objeto 2&lt;/li&gt;&lt;/ol&gt;</td>
+            <td>Una lista ordenada puede ser numérica o alfabética</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;ul&gt; &lt;/ul&gt;</td>
+            <td>Define una lista desordenada</td>
+            <td>&lt;ul&gt;li&gt;Objeto 1&lt;/li&gt;li&gt;Objeto 2&lt;/li&gt;&lt;/ul&gt;</td>
+            <td>Una lista desordenada se marcará con viñetas de forma predeterminada.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;li&gt; &lt;/li&gt;</td>
+            <td>Define un elemento de lista</td>
+            <td>&lt;li&gt;Cafe&lt;/li&gt;</td>
+            <td>La etiqueta \ se usa dentro de listas ordenadas(lista de pedidos y lista de menú)</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;dl&gt; &lt;/dl&gt;</td>
+            <td>Define una lista de descripción</td>
+            <td>&lt;dl&gt;&lt;dt&gt;Cafe&lt;/dt&gt;&lt;dd&gt;bebida caliente negra&lt;&lt;/dd&gt;&lt;/dl&gt;</td>
+            <td>Utilizado junto con \ y</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;dt&gt; &lt;/dt&gt;</td>
+            <td>Define un término/nombre en una lista de descripción</td>
+            <td>&lt;dt&gt;Cafe&lt;/dt&gt;</td>
+            <td>Utilizado junto con \ y</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;dd&gt; &lt;/dd&gt;</td>
+            <td>Describe cada término/nombre en una lista de descripción</td>
+            <td>&lt;dd&gt;bebida caliente negra&lt;/dd&gt;</td>
+            <td>Usado dentro de un elemento \</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;a&gt; &lt;/a&gt;</td>
+            <td>Define un hipervínculo</td>
+            <td>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</td>
+            <td>El atributo más importante del elemento \ es el atributo href, que indica el destino del enlace.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;link&gt; </td>
+            <td>Define la relación entre el documento actual y un recurso externo</td>
+            <td>&lt;link rel="stylesheet" href="styles.css"&gt;</td>
+            <td>Se utiliza más comúnmente para vincular hojas de estilo CSS.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;nav&gt; &lt;/nav&gt;</td>
+            <td>Define un conjunto de enlaces de navegación</td>
+            <td>&lt;nav&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/nav&gt;</td>
+            <td>No todos los enlaces de un documento deben estar dentro de un elemento \</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;main&gt; &lt;/main&gt;</td>
+            <td>Especifica el contenido principal de un documento</td>
+            <td>&lt;main&gt;&lt;article&gt;&lt;h1&gt;Titulo de articulo&lt;/h1&gt;&lt;/article&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/main&gt;</td>
+            <td>No todos los enlaces de un documento deben estar dentro de un elemento \</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;article&gt; &lt;/article&gt;</td>
+            <td>Define un contenido independiente y autónomo.</td>
+            <td>&lt;article&gt;&lt;h2&gt;Titulo de articulo&lt;/h2&gt;&lt;p&gt;Contenido de Articulo&lt;/p&gt;&lt;/article&gt;</td>
+            <td>publicación en foro, publicación en blog, artículo de periódico.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;aside&gt; &lt;/aside&gt;</td>
+            <td>Define contenido aparte del contenido de la página</td>
+            <td>&lt;aside&gt;&lt;h4&gt;Relacionada&lt;/h4&gt;&lt;p&gt;Contenido&lt;/p&gt;&lt;/aside&gt;</td>
+            <td>El contenido aparte debe estar relacionado con el contenido circundante</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;section&gt; &lt;/section&gt;</td>
+            <td>Define una sección en un documento.</td>
+            <td>&lt;section&gt;&lt;h2&gt;Seccion del titulo&lt;/h2&gt;&lt;p&gt;Contenido de la seccion&lt;/p&gt;&lt;/section&gt;</td>
+            <td>Los elementos \ normalmente deberían tener un encabezado.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;div&gt; &lt;/div&gt;</td>
+            <td>Define una división o una sección en un documento HTML</td>
+            <td>&lt;div&gt;&lt;p&gt;Algún texto aquí&lt;/p&gt;&lt;/div&gt;</td>
+            <td>Es un contenedor para otros elementos HTML</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;figure&gt; &lt;/figure&gt;</td>
+            <td>Especifica contenido autónomo, como ilustraciones, diagramas, fotografías, listados de códigos, etc</td>
+            <td>&lt;figure&gt;&lt;img src="image.jpg" alt="Image"&gt;&lt;figcaption&gt;Fig1. - Una imagen de ejemplo&lt;/figcaption&gt;&lt;/figure&gt;</td>
+            <td>Es un contenedor para otros elementos HTML</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;figcaption&gt; &lt;/figcaption&gt;</td>
+            <td>Define un título para un elemento \</td>
+            <td>&lt;figcaption&gt;Fig1. - Una imagen de ejemplo&lt;/figcaption&gt;</td>
+            <td>El elemento \ debe ser el primer o último hijo del elemento \.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;img&gt;</td>
+            <td>Se utiliza para incrustar una imagen en una página HTML</td>
+            <td>&lt;img src="image.jpg" alt="My Image"&gt;</td>
+            <td>El atributo src especifica la ruta a la imagen y el atributo alt especifica un texto alternativo para la imagen, si por algún motivo la imagen no se puede mostrar.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;audio&gt; &lt;/audio&gt;</td>
+            <td>Se utiliza para incrustar contenido de sonido en un documento HTML</td>
+            <td>&lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;</td>
+            <td>Se pueden utilizar varios elementos \ para admitir diferentes formatos de audio.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;video&gt; &lt;/video&gt;</td>
+            <td>Se utiliza para incrustar contenido de vídeo en un documento HTML</td>
+            <td>&lt;video width="320" height="240" controls&gt;&lt;source src="movie.mp4" type="video/mp4"&gt;&lt;/audio&gt;</td>
+            <td>Se pueden utilizar varios elementos \ para admitir diferentes formatos de vídeo</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;embed&gt;</td>
+            <td>Define un contenedor para una aplicación externa o contenido interactivo (como un complemento)</td>
+            <td>&lt;embed type="application/pdf" src="document.pdf" width="500" height="300"&gt;</td>
+            <td>La etiqueta \ es una etiqueta de cierre automático.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;object&gt; &lt;/object&gt;</td>
+            <td>Define un contenedor para un recurso externo.</td>
+            <td>&lt;object data="image.svg" type="image/svg+xml"&gt&lt;/object&gt;</td>
+            <td>Se puede utilizar para incrustar varios tipos de contenido, como imágenes, audio, vídeo, subprogramas de Java, ActiveX, PDF y Flash</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;object&gt; &lt;/object&gt;</td>
+            <td>Define un contenedor para un recurso externo.</td>
+            <td>&lt;object data="image.svg" type="image/svg+xml"&gt&lt;/object&gt;</td>
+            <td>Se puede utilizar para incrustar varios tipos de contenido, como imágenes, audio, vídeo, subprogramas de Java, ActiveX, PDF y Flash</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;picture&gt; &lt;/picture&gt;</td>
+            <td>Proporciona flexibilidad para especificar recursos de imagen</td>
+            <td>&lt;picture&gt;&lt;source media="(max-width: 600px)" srcset="small.jpg"&gt;&lt;img src="large.jpg" alt="My Image"&gt;&lt;/picture&gt;</td>
+            <td>Le permite definir diferentes imágenes para diferentes tamaños de pantalla o resoluciones</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;map&gt; &lt;/map&gt;</td>
+            <td>Define un área dentro de un mapa de imagen</td>
+            <td>&lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"&gt;</td>
+            <td>Cada etiqueta \ especifica los límites y el comportamiento de un área en la que se puede hacer clic</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;svg&gt; &lt;/svg&gt;</td>
+            <td>Define un contenedor para gráficos SVG</td>
+            <td>&lt;svg width="100" height="100"&gt;&lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow&gt;&lt;/svg&gt;</td>
+            <td>SVG es un módulo para definir gráficos basados ​​en vectores en formato XML.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;canvas&gt; &lt;/canvas&gt;</td>
+            <td>Se utiliza para dibujar gráficos sobre la marcha, a través de JavaScript.</td>
+            <td>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</td>
+            <td>El elemento \ es sólo un contenedor de gráficos. Debes usar JavaScript para dibujar los gráficos</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;table&gt; &lt;/table&gt;</td>
+            <td>Define una tabla HTML</td>
+            <td>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Fila 1, Columna 1&lt;/td&gt;&lt;td&gt;Fila 1, Columna 2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+            <td>Una tabla HTML consta del elemento \ y uno o más elementos \, \ elementos y \ elementos.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;caption&gt; &lt;/caption&gt;</td>
+            <td>Define un título de tabla</td>
+            <td>&lt;table&gt;&lt;caption&gt;My Table&lt;/caption&gt;&lt;/table&gt;</td>
+            <td>La etiqueta \ debe insertarse inmediatamente después de la etiqueta \</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;th&gt; &lt;/th&gt;</td>
+            <td>Define una celda de encabezado en una tabla</td>
+            <td>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Encabezado 1&lt;/th&gt;&lt;th&gt;Encabezado 2&lt;/th&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+            <td>De forma predeterminada, los encabezados de las tablas están en negrita y centrados</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;tr&gt; &lt;/tr&gt;</td>
+            <td>Define una fila en una tabla</td>
+            <td>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Fila 1, Columna 1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+            <td>Una fila de la tabla contiene uno o más elementos</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;td&gt; &lt;/td&gt;</td>
+            <td>Define una celda en una tabla</td>
+            <td>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Fila 1, Columna 1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+            <td>\ elementos son los contenedores de datos de la tabla.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;thead&gt; &lt;/thead&gt;</td>
+            <td>Agrupa el contenido del encabezado en una tabla HTML</td>
+            <td>&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Encabezado&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;/table&gt;</td>
+            <td>El elemento \ debe usarse junto con los elementos \ y \</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;tbody&gt; &lt;/tbody&gt;</td>
+            <td>Agrupa el contenido del cuerpo en una tabla HTML</td>
+            <td>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;Fila 1, Columna 1&lt;/th&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</td>
+            <td>El \elemento debe usarse junto \ y \con los elementos </td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;tfoot&gt; &lt;/tfoot&gt;</td>
+            <td>Agrupa el contenido del pie de página en una tabla HTML.</td>
+            <td>&lt;table&gt;&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;pie de pagina&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;&lt;/table&gt;</td>
+            <td>El elemento debe usarse junto con los elementos \ y \. </td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;col&gt;</td>
+            <td>Especifica propiedades de columna para cada columna dentro de un elemento</td>
+            <td>&lt;colgroup&gt;&lt;col span="2" style="background-color:red"&gt;&lt;/colgroup&gt;</td>
+            <td>La etiqueta es útil para aplicar estilos a columnas enteras, en lugar de repetir los estilos para cada celda, para cada fila. </td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;colgroup&gt; &lt;/colgroup&gt;</td>
+            <td>Especifica un grupo de una o más columnas en una tabla para formatear</td>
+            <td>&lt;colgroup&gt;&lt;col span="2"&gt;&lt;/colgroup&gt;</td>
+            <td>La etiqueta es útil para aplicar estilos a columnas enteras, en lugar de repetir los estilos para cada celda, para cada fila</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;form&gt; &lt;/form&gt;</td>
+            <td>Define un formulario HTML para la entrada del usuario</td>
+            <td>&lt;form action="/action_page.php"&gt;&lt;label"&gt;Name&lt;/label&gt;
+                &lt;input type="text" id="name" name="&gt;&lt;input type="submit" value="Submit"&gt;&lt;/form&gt;</td>
+            <td>El formulario HTML contiene elementos de formulario</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;input&gt;</td>
+            <td>Define un campo de entrada donde el usuario puede ingresar datos</td>
+            <td>&lt;input type="text" id="name" name="name"&gt;</td>
+            <td>El atributo de tipo especifica el tipo de entrada que se mostrará</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;textarea&gt; &lt;/textarea&gt;</td>
+            <td>Define un control de entrada de texto multilínea (área de texto)</td>
+            <td>&lt;textarea rows="4" cols="50" name="comment" form="usrform"&gt;Ingrese el texto aqui&lt;/textarea&gt;</td>
+            <td>El atributo de filas especifica el número visible de líneas en un área de texto. El atributo cols especifica el ancho visible de un área de texto</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;label&gt; &lt;/label&gt;</td>
+            <td>Define una etiqueta para varios elementos del formulario</td>
+            <td>&lt;label"&gt;Name&lt;/label&gt;
+                &lt;input type="text" id="name" name="name"&gt;</td>
+            <td>La etiqueta es útil para los usuarios de lectores de pantalla, porque el lector de pantalla leerá la etiqueta cuando el usuario se centre en el elemento</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;select&gt; &lt;/select&gt;</td>
+            <td>Define una lista desplegable</td>
+            <td>&lt;select name="cars" id="cars"&gt;&lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+                &lt;option value="saab"&gt;Saab&lt;/option&gt;&lt;/select&gt;</td>
+            <td>El elemento se utiliza para definir las opciones disponibles</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;option&gt; &lt;/option&gt;</td>
+            <td>Define una opción en una lista de selección</td>
+            <td>&lt;option value="volvo"&gt;Volvo&lt;/option&gt;</td>
+            <td>los elementos van dentro de un elemento </td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;optgroup&gt; &lt;/optgroup&gt;</td>
+            <td>Define una lista desplegable</td>
+            <td>&lt;select&gt;&lt;otpgroup label="Swedish Cars"&gt;
+            &lt;option value="volvo"&gt;Volvo&lt;/option&gt;&lt;/otpgroup&gt;&lt;/select&gt;</td>
+            <td>El elemento le permite agrupar opciones relacionadas en una lista desplegable</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;button&gt; &lt;/button&gt;</td>
+            <td>Define un botón en el que se puede hacer clic</td>
+            <td>&lt;button type="button"&gt;Hacer Click&lt;/button&gt;</td>
+            <td>Dentro de un elemento puedes poner contenido, como texto o imágenes</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;dialog&gt; &lt;/dialog&gt;</td>
+            <td>La etiqueta representa un cuadro de diálogo u otro componente interactivo, como un inspector o una ventana</td>
+            <td>&lt;button &gt;Abrir cuadro de diálogo&lt;/button&gt;
+                &lt;dialog&gt;Este es un cuadro de diálogo &lt;/dialog&gt;</td>
+            <td>A menudo se usa con JavaScript para crear ventanas emergentes interactivas o cuadros de diálogo modales</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;fieldset&gt; &lt;/fieldset&gt;</td>
+            <td>Agrupa elementos relacionados en un formulario</td>
+            <td>&lt;form&gt;&lt;feildset&gt;&lt;legend&gt;Informacion Personal
+                &lt;/legend&gt;&lt;label&gt;Nombre&lt;/label&gt;&lt;input type="text"&gt;&lt;br&gt;
+                &lt;/fieldset&gt;&lt;/form&gt;</td>
+            <td>El elemento dibuja un cuadro alrededor de los elementos relacionados</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;legend&gt; &lt;/legend&gt;</td>
+            <td>Define un título para un elemento</td>
+            <td>&lt;legend&gt;Informacion Personal&lt;/legend&gt;</td>
+            <td>El elemento proporciona un título para el elemento</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;datalist&gt; &lt;/datalist&gt;</td>
+            <td>Especifica una lista de opciones predefinidas para un elemento</td>
+            <td>&lt;input list="browsers" name="browser"&gt;&lt;datalist id="browsers"&gt;&lt;option value="Chrome"&gt;
+                &lt;datalist&gt;</td>
+            <td>Utilice el atributo de lista del elemento para vincularlo con un elemento</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;output&gt; &lt;/output&gt;</td>
+            <td>Representa el resultado de un cálculo</td>
+            <td>&lt;form oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
+                &lt;input type="range" id="a" value="50"&gt;&lt;input type="number" id="b" value="50"&gt;
+                &lt;output name="x" for="a b"&gt;&lt;/output&gt;&lt;/form&gt;</td>
+            <td>El elemento es un elemento contenedor y, como todos los elementos contenedores, puede contener otros elementos</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;script&gt; &lt;/script&gt;</td>
+            <td>Define un script del lado del cliente (JavaScript)</td>
+            <td>&lt;script&gt;alert("Hello World!");&lt;/script&gt;</td>
+            <td>El elemento contiene declaraciones de script o apunta a un archivo de script externo a través del atributo src</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;noscript&gt; &lt;/noscript&gt;</td>
+            <td>Define un contenido alternativo para los usuarios que tienen scripts deshabilitados en su navegación</td>
+            <td>&lt;noscript&gt;¡Su navegador no soporta JavaScript!&lt;/noscript&gt;</td>
+            <td>El elemento puede contener todos los elementos HTML que puedes encontrar dentro del elemento de un documento HTML</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;meta&gt;</td>
+            <td>Proporciona metadatos sobre el documento HTML, como conjunto de caracteres, descripción, palabras clave, autor y configuración de ventana gráfica.</td>
+            <td>&lt;meta charset="UTF-8"&gt;</td>
+            <td>Los metadatos no se mostrarán en la página, pero son analizables por máquina</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;style&gt; &lt;/style&gt;</td>
+            <td>Define información de estilo (CSS) para un documento</td>
+            <td>&lt;style&gt;body {background-color: lightblue;}&lt;/style&gt;</td>
+            <td>El elemento se define dentro de la sección</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;base&gt;</td>
+            <td>Especifica la URL base/destino para todas las URL relativas en un documento</td>
+            <td>&lt;base href="https://www.example.com/" target="_blank"&gt;</td>
+            <td>Sólo puede haber un único elemento en un documento y debe estar dentro del elemento</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;aside&gt;</td>
+            <td>Define algún contenido además del contenido de la página</td>
+            <td>&lt;aside&gt; &lt;p&gt;Elemento para marcar bloques de navegación en el lado derecho o izquierdo del contenido principal&lt;/p&gt;&lt;/aside&gt;</td>
+            <td>Podría usarse para explicaciones</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;hgroup&gt;</td>
+            <td>Relaciona un conjunto de elementos &lt;h1&gt; con &lt;h6&gt;</td>
+            <td>&lt;hgruop&gt;&lt;h1&gt; Titulo principal &lt;/h1&gt; &lt;h2&gt;
+                Titulo secundario&lt;/h2&gt;&lt;/hgruop&gt;</td>
+            <td>Se utiliza cuando un título tiene varios niveles</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;details&gt;</td>
+            <td>Especifica detalles adicionales que el usuario puede ver u ocultar</td>
+            <td>&lt;details&gt;&lt;summary&gt;Información adicional&lt;/summary&gt;
+            &lt;p&gt;Contenido detallado&lt;/p&gt;&lt;/details&gt;</td>
+            <td>se puede utilizar para crear un widget interactivo que el usuario puede abrir y cerrar</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;summary&gt;</td>
+            <td>Define un encabezado visible para el elemento</td>
+            <td>&lt;details&gt;&lt;summary&gt;Información adicional&lt;/summary&gt;&lt;/details&gt;</td>
+            <td>El usuario puede hacer clic en el resumen para ver u ocultar los detalles.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;menu&gt;</td>
+            <td>Representa una lista de comandos</td>
+            <td>&lt;menu&gt;&lt;li&gt;&lt;button id="save"&gt;Save for later&lt;/button&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;button id="share"&gt;Share this news&lt;/button&gt;&lt;/li\&gt;
+                &lt;/menu&gt;</td>
+            <td>Se utiliza para crear menús contextuales, barras de herramientas y para enumerar controles y comandos de formulario</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;meter&gt;&lt;/meter&gt;</td>
+            <td>Define una medida escalar dentro de un rango</td>
+            <td>&lt;meter value="60" min="0" max="100"&gt;60 de 100&lt;/meter&gt;</td>
+            <td>Úselo para mostrar el uso del disco o la relevancia del resultado de una consulta.</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;progress&gt;&lt;/progress&gt;</td>
+            <td>Representa el progreso de finalización de una tarea</td>
+            <td>&lt;progress value="50" max="100"&gt;60 de 100&lt;/progress&gt;</td>
+            <td>Utilice la etiqueta en combinación con JavaScript para mostrar el progreso de una tarea</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;track&gt;</td>
+            <td>La etiqueta especifica pistas de texto para elementos</td>
+            <td>&lt;video controls&gt; &lt;source src="movie.mp4" type="video/mp4"&gt; 
+                &lt;track src="captions_en.vtt" kind="subtitles" srclang="en" label="English"&gt; &lt;/video&gt;</td>
+            <td>Este elemento se utiliza para agregar subtítulos, leyendas, descripciones u 
+                otros metadatos al contenido multimedia. La etiqueta debe colocarse dentro del elemento</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;source&gt;&lt;/source&gt;</td>
+            <td>La etiqueta HTML especifica múltiples recursos multimedia para los elementos </td>
+            <td>&lt;video controls&gt; &lt;source src="movie.mp4" type="video/mp4"&gt; 
+                &lt;source src="movie.ogg" type="video/ogg"&gt;Su navegador no soporta la etiqueta de video&lt;/video&gt;</td>
+            <td>Este elemento se utiliza para agregar subtítulos, leyendas, descripciones u 
+                otros metadatos al contenido multimedia. La etiqueta debe colocarse dentro del elemento</td>
+        </tr>
+
+        <tr>
+            <td class="Inicial">&lt;slot&gt;&lt;/slot&gt;</td>
+            <td>Permite insertar contenido personalizado dentro de ese componente 
+                desde fuera, lo que facilita la reutilización y personalización de componentes.</td>
+            <td>&lt;slot name="contenido-principal"&gt;&lt;/slot&gt;</td>
+            <td>name: Se utiliza para dar un nombre a la ranura, lo que permite identificarla y asignar contenido específico a ella</td>
+        </tr>
+
+      </table> </ol>
+</body>
+</html>
