@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-menu {
+    background-color: #003366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #004080;
+}
+
+.menu-dropdown {
+    position: relative;
+    
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #0059b3;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+}
+
+.menu-dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu p, .submenu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #007ddb;
+}
+
+.image-table-container {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+}
+
+.small-image {
+    max-width: 310px;
+    max-height: 50px;
+    padding-right: 200px;
+    
+}
+
+.options-table {
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+}
+
+.table-button {
+    background-color: transparent;
+    color: #003366;
+    padding: 10px 30px;
+    text-decoration: none;
+    
+}
+
+.table-button:hover {
+    background-color: #f0f0f0;
+}
+
+.submenu-section {
+    position:relative;
+    display: none;
+    width: 100%;
+    background-color: hwb(238 58% 15% / 0.721);
+}
+
+.submenu-table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-dropdown:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 5px;
+    min-width: 1000px;
+    min-height: 340px;
+    top: 100%;
+    left: 0;
+}
+
+.button-despliegue{
+    margin-top: 70px;
+    border-radius:  10px;;
+    background-color:aliceblue;
+    
+}
+.button-despliegue:hover{
+    color: orange;
+}
+
+.submenu-content table {
+    border-collapse: collapse;
+    width: 750px;
+    height: 300px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.submenu-content th {
+    color: cornflowerblue;
+    text-decoration: none;
+    text-align:left;
+
+}
+.submenu-content td{
+    border-right: 1px solid;
+    border-color:rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.ad{
+    border-right: none;
+}
+
+.submenu-content a{
+    color: black;
+    text-decoration: none;
+}
+.submenu-content a:hover{
+    color: rgb(215, 104, 104);
+    text-decoration: none;
+}
+
+#personal-section:target {
+    display: block;
+}
+
+.center-box {
+    width: 98%;
+    height: 80%;
+    background-color: white;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center-box img {
+    max-width: 100%;
+    max-height:100%;
+}
