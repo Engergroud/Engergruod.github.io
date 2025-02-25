@@ -45,8 +45,10 @@ function VerificarCedula(){
     if(modulo==digito_Verificador){
         Respuesta.textContent = "Cédula Valida";
         Respuesta.className = "valida";
+        Respuesta.style.color="GREEN";
     }else{
         Respuesta.textContent = "Cédula inválida ";
         Respuesta.className = "invalida";
+        Respuesta.style.color="RED";
     }
 }
