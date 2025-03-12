@@ -1,0 +1,98 @@
+body{
+    background-color: antiquewhite;
+}
+.table{
+    width: 700px;
+    margin-left: 0;
+}
+#cuerpo{
+    width: 700px;
+    height: 75px;
+    background-color: aqua;
+    margin-left: 520px;
+    margin-top: 10px;
+    border: solid 2px;
+    margin-bottom: 3px;
+}
+#cuerpo h2{
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 10px;
+}
+#Opciones{
+    background-color: rgb(53, 191, 145);
+    width: 70%;
+    height: 80px; 
+    border: solid 5px;
+    margin-left: 290px;
+    border-style: double;
+    line-height: 50px;
+}
+#Opciones ul{
+    display: flex;
+    justify-content: space-around;
+}
+#Opciones ul li{
+    list-style-type: none;
+    
+}
+#Opciones ul li a{
+    display: block;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+.subMenu{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    justify-items: center;
+}
+
+.subMenu .nav_submenu a{
+    text-decoration: none;
+    width: 300px;
+    margin: 0;
+    height: 50px;
+    padding-bottom: 20px;
+    color: black;
+}
+.subMenu .nav_submenu a:hover{
+    background-color: rgb(174, 216, 216);
+}
+
+
+.a_sub-Menu:hover .subMenu{
+    display: block;
+    background-color: rgb(27, 72, 72);
+    
+}
+
+
+#Menu{
+    width: 1400px;
+    height: 75px;
+    justify-items: center;
+    display: block;
+}
+
+.input{
+    width: 150px;
+    height: 30px;
+}
+#Form{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+#Formulario{
+    width: 1650px;
+    height: 1000px;
+    background-color:cadetblue;
+    border:solid 2px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
