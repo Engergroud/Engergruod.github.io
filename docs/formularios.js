@@ -12,7 +12,7 @@ let lastId = 0;
 //Funcion para cargar los datos desde el JSON server
 async function loadRecords() {
     try {
-        const response = await fetch('http://localhost:3000/records');
+        const response = await fetch('https://torch-tangible-gaura.glitch.me/records');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -324,7 +324,7 @@ async function saveRecord() {
             condiciones: formData.condiciones,
             internamientos: formData.internamientos
         };
-        const response = await fetch('http://localhost:3000/records', {
+        const response = await fetch('https://torch-tangible-gaura.glitch.me/records', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -346,7 +346,7 @@ async function saveRecord() {
 async function updateRecordOnServer(id) {
     try {
         const recordToUpdate = records.find(r => r.id == id);
-        const response = await fetch(`http://localhost:3000/records/${id}`, {
+        const response = await fetch(`https://torch-tangible-gaura.glitch.me/records/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -458,7 +458,7 @@ function updateRecord() {
 
 async function deleteRecord(id) {
     try {
-        const response = await fetch(`http://localhost:3000/records/${id}`, {
+        const response = await fetch(`https://torch-tangible-gaura.glitch.me/records/${id}`, {
             method: 'DELETE'
         });
         if (!response.ok) {
