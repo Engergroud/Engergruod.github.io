@@ -297,7 +297,7 @@ function Editar_Internamiento(i) {
         // Actualizar el objeto familiar con los nuevos valores
         const internamiento = {
         fecha: FechaInput,
-        centroMedico: centroMedico,
+        centroMedico: CentroMedicoInput,
         diagnostico: DiagnosticoInput
         };
         formData.internamientos[i] = internamiento;
