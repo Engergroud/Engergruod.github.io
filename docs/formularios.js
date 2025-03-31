@@ -342,6 +342,11 @@ async function saveRecord() {
         }
         formData = { persona: {}, familiares: [], condiciones: [], internamientos: [] };
         modalHistory = [];
+        clearInputs("Datos_personales-container");
+        clearInputs("familiares-container");
+        clearInputs("condiciones-container");
+        clearInputs("internamientos-container");
+        
         $('.modal').modal('hide');
         loadRecords();
     } catch (error) {
