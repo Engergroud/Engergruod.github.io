@@ -42,7 +42,10 @@ function nextModal(nextModalId) {
     modalHistory.push(nextModalId);
     if (nextModalId === 'familiaresModal') {
         formData.persona = {
-            nombre: document.getElementById('nombre').value
+            nombre: document.getElementById('nombre').value,
+            apellido: document.getElementById('P_apellido').value,
+            edad: document.getElementById('P_edad').value,
+            sexo: document.getElementById('P_sexo').value
         };
         const familiarlabel=document.getElementById('familiaresModalLabel');
         familiarlabel.innerHTML=`Familiares del paciente(${formData.persona.nombre})`
@@ -85,6 +88,9 @@ function Cerrar_Modal(){
 function updateModalInputs(modalId) {
     if (modalId === 'familiaresModal') {
         document.getElementById('nombre').value = formData.persona.nombre || '';
+        document.getElementById('P_apellido').value = formData.persona.apellido || '';
+        document.getElementById('P_edad').value = formData.persona.edad || '';
+        document.getElementById('P_sexo').value = formData.persona.sexo || '';
     } else if (modalId === 'condicionesModal') {
         displayFamiliares();
     } else if (modalId === 'internamientosModal') {
@@ -385,6 +391,16 @@ function editRecord(id) {
     editContent.innerHTML = `
         <label for="edit-nombre">Nombre:</label>
         <input type="text" id="edit-nombre" class="form-control" value="${record.persona.nombre}">
+        <label for="edit-P_apellido">Apellido:</label>
+        <input type="text" id="edit-P_apellido" class="form-control" value="${record.persona.apellido}">
+        <label for="edit-P_edad">Edad:</label>
+        <input type="text" id="edit-P_edad" class="form-control" value="${record.persona.edad}">
+        <label for="edit-P_sexo">Sexo:</label>
+        <select id="edit-P_sexo" name="opciones">
+            <option value="defecto" ${record.persona.sexo === 'defecto' ? 'selected' : ''}>Defecto</option>
+            <option value="Masculino" ${record.persona.sexo === 'Masculino' ? 'selected' : ''}>Masculino</option>
+            <option value="Femenino" ${record.persona.sexo === 'Femenino' ? 'selected' : ''}>Femenino</option>
+        </select>
         <div id="edit-familiares-container">
             ${record.familiares.map((f, i) => `
                 <div>
@@ -421,6 +437,9 @@ function editRecord(id) {
 function updateRecord() {
     const editContent = document.getElementById('edit-record-content');
     const nombre = editContent.querySelector('#edit-nombre').value;
+    const apellido = editContent.querySelector('#edit-P_apellido').value;
+    const edad = editContent.querySelector('#edit-P_edad').value;
+    const sexo = document.getElementById("edit-P_sexo").value;
     const familiares = Array.from(editContent.querySelectorAll('#edit-familiares-container div')).map(div => {
         const inputs = div.querySelectorAll('input');
         return {
@@ -446,7 +465,7 @@ function updateRecord() {
     });
     records[currentEditIndex] = {
         id: records[currentEditIndex].id,
-        persona: { nombre },
+        persona: { nombre,apellido,edad,sexo},
         familiares,
         condiciones,
         internamientos
@@ -477,7 +496,9 @@ function showSummary(id) {
         <div class="card mb-2">
             <div class="card-body">
                 <h6 style="font-size: 20px;"><stron>Paciente</stron></h6>
-                <p><strong>Nombre:</strong> ${record.persona.nombre}</p>
+                <p><strong>Nombre:</strong> ${record.persona.nombre} ${record.persona.apellido}</p>
+                <p><strong>Edad:</strong> ${record.persona.edad}</p>
+                <p><strong>Sexo:</strong> ${record.persona.sexo}</p>
                 <p><strong>Familiares:</strong></p>
                 <ul>
                     ${record.familiares.map(f => `<li>${f.nombre} - ${f.parentesco} - ${f.edad} años</li>`).join('')}
