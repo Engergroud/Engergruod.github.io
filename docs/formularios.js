@@ -319,6 +319,12 @@ function eliminarInternamiento(i){
 function clearInputs(containerId) {
     const container = document.getElementById(containerId);
     container.querySelectorAll('input').forEach(input => input.value = '');
+    if(containerId=='Datos_personales-container'){
+        container.querySelectorAll('select').forEach(select => {
+            const defaultValue = select.querySelector('P_sexo')?.value || select.options[0].value;
+            select.value = defaultValue;
+        });
+    }
 }
 
 async function saveRecord() {
