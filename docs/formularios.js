@@ -321,7 +321,7 @@ function clearInputs(containerId) {
     container.querySelectorAll('input').forEach(input => input.value = '');
     if(containerId=='Datos_personales-container'){
         container.querySelectorAll('select').forEach(select => {
-            const defaultValue = select.querySelector('P_sexo')?.value || select.options[0].value;
+            const defaultValue = select.querySelector('option[selected]')?.value || select.options[0].value;
             select.value = defaultValue;
         });
     }
