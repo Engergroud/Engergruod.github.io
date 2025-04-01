@@ -274,10 +274,10 @@ function displayInternamientos() {
 //funcion para editar una condicion agregada por la persona
 function Editar_Internamiento(i) {
     // Obtener los elementos de entrada correspondientes a la condicion seleccionada
-    const FechaInput = document.getElementById(`F-${i}`);
-    const CentroMedicoInput = document.getElementById(`C-${i}`);
-    const DiagnosticoInput = document.getElementById(`D-${i}`);
-    const guardarButton = document.getElementById(`guardarI-${i}`);
+    const FechaInput = document.getElementById(`F-${i}`).value;
+    const CentroMedicoInput = document.getElementById(`C-${i}`).value;
+    const DiagnosticoInput = document.getElementById(`D-${i}`).value;
+    const guardarButton = document.getElementById(`guardarI-${i}`).value;
 
     // Verificar si los campos están deshabilitados (modo de visualización)
     if (CentroMedicoInput.disabled) {
