@@ -308,7 +308,7 @@ function Editar_Internamiento(i) {
 }
 
 //Funcion para eliminar una condicion Registrado por la persona
-function eliminarCondicion(i){
+function eliminarInternamiento(i){
     const centroMedicoo = document.getElementById(`C-${i}`).value;
 
     formData.internamientos = formData.internamientos.filter(inter => inter.centroMedico != centroMedicoo);
