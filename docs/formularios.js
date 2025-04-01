@@ -487,16 +487,19 @@ function updateRecord() {
 }
 
 async function deleteRecord(id) {
-    try {
-        const response = await fetch(`https://torch-tangible-gaura.glitch.me/records/${id}`, {
-            method: 'DELETE'
-        });
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
+    const confirmed = confirm('¿Estás seguro de que deseas eliminar este registro?');
+    if (confirmed) {
+        try {
+            const response = await fetch(`https://torch-tangible-gaura.glitch.me/records/${id}`, {
+                method: 'DELETE'
+            });
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            loadRecords();
+        } catch (error) {
+            console.error('Error deleting data:', error);
         }
-        loadRecords();
-    } catch (error) {
-        console.error('Error deleting data:', error);
     }
 }
 
